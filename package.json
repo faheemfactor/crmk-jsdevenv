@@ -4,7 +4,7 @@
   "description": "JavaScript development environment  by Faheem Factor",
   "scripts": {
     "prestart": "babel-node buildscripts/startmessage.js",
-    "start": "cls npm-run-all --parallel security-check open-source lint-watch test-watch",
+    "start": "npm-run-all --parallel security-check open-source lint-watch test-watch",
     "open-source": "babel-node buildscripts/srcserver.js",
     "lint": "esw webpack.config.* src buildscripts --color",
     "lint-watch": "npm run lint -- --watch",
